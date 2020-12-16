@@ -5,11 +5,11 @@ Resume with Gatsby and docker
 #then just create the docker image with this command in the directory of this dockerfile
 #docker build --tag imagecv . 
 
-#and then create a directory in the c: which is called "data"
+#and then create a directory in the c: which is called "data" and place the file gatsby-config.js inside the data folder
 
 #and finally to launch the container run this command 
 
 #docker run --name containercv  --mount type=bind,source=C:\data\gatsby-config.js,target=/app/my-resume/gatsby-config.js  -p 8000:8000 imagecv
 #Go to localhost:8000
 
-#and once you want your information to be displayed just change the gatsby-config.js file to the data file (c:/data/gatsby-config.js)
+#and once you want your information to be displayed just change the gatsby-config.js file inside the data folder by your personal information (c:/data/gatsby-config.js)
